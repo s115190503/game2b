@@ -25,9 +25,13 @@ func _ready() -> void:
 
 func apply_traditional_chinese_theme() -> void:
 	var chinese_theme := Theme.new()
-	chinese_theme.default_font = load("res://assets/NotoSansTC-VF.ttf")
+	var chinese_font: Font = load("res://assets/kaiu.ttf")
+	chinese_theme.default_font = chinese_font
 	chinese_theme.default_font_size = 20
+	for control_type in ["Control", "Label", "Button", "HSlider"]:
+		chinese_theme.set_font("font", control_type, chinese_font)
 	theme = chinese_theme
+	add_theme_font_override("font", chinese_font)
 
 func build_shell() -> void:
 	var bg := ColorRect.new()

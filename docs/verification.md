@@ -7,7 +7,7 @@
 - Blender OBJ asset import during Godot export: passed.
 - Godot headless run with `--quit-after 3`: exit code 0.
 - Godot Web release export: passed; generated `index.html`, `index.js`, `index.wasm`, `index.pck`, audio worklets, and `index.png`.
-- Traditional Chinese UI: passed; `NotoSansTC-VF.ttf` is embedded in the Godot project and the Web shell is marked `lang="zh-Hant"`.
+- Traditional Chinese UI: passed; a static Traditional Chinese font is embedded in the Godot project and the Web shell is marked `lang="zh-Hant"`.
 - Local HTTP server: root `index.html` and `index.wasm` reachable.
 
 ## Manual acceptance checklist
