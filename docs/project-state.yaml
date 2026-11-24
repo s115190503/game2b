@@ -1,0 +1,16 @@
+project: 小小夢魔：生活理財投資
+mode: teaching
+current_phase: release
+dt_handoff: approved_by_request
+requirements_version: 2.0
+platform: Godot 4.7.2 Web HTML5
+audience: 小學生
+success_measures:
+  - 兩個互動單元皆可完成
+  - 每關答對後才取得 KEY
+  - 顯示每關得分與最後進步成果
+  - 可在 GitHub Pages 直接載入
+known_limitations:
+  - 尚未進行真實小學生樣本測試
+  - Blender 模型先以預覽圖作為 Godot UI 視覺資產，OBJ 保留於 assets
+
