@@ -19,8 +19,15 @@ var hero: TextureRect
 
 func _ready() -> void:
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	apply_traditional_chinese_theme()
 	build_shell()
 	show_title()
+
+func apply_traditional_chinese_theme() -> void:
+	var chinese_theme := Theme.new()
+	chinese_theme.default_font = load("res://assets/NotoSansTC-VF.ttf")
+	chinese_theme.default_font_size = 20
+	theme = chinese_theme
 
 func build_shell() -> void:
 	var bg := ColorRect.new()
@@ -262,4 +269,3 @@ func reset_game() -> void:
 	score_one = 0
 	score_two = 0
 	show_title()
-

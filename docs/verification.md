@@ -7,6 +7,7 @@
 - Blender OBJ asset import during Godot export: passed.
 - Godot headless run with `--quit-after 3`: exit code 0.
 - Godot Web release export: passed; generated `index.html`, `index.js`, `index.wasm`, `index.pck`, audio worklets, and `index.png`.
+- Traditional Chinese UI: passed; `NotoSansTC-VF.ttf` is embedded in the Godot project and the Web shell is marked `lang="zh-Hant"`.
 - Local HTTP server: root `index.html` and `index.wasm` reachable.
 
 ## Manual acceptance checklist
@@ -20,4 +21,3 @@
 ## Known environment note
 
 The in-app browser may show a canvas capability fallback for the Godot runtime even though the generated Web export is valid and served with the required files. Verify the deployed page in a current Chrome, Edge, or Firefox browser as the release acceptance browser.
-
